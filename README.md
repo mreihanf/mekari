@@ -2,7 +2,7 @@
 
 a. SQL
 * Open _SQL_ folder
-* Run _schema.sql_ on your preferred database administration software to build the schema and copy the contenct of csv files to the tables.
+* Run _schema.sql_ on your preferred database administration software to build the schema and copy the content of csv files to the tables.
 *  Run _insert.sql_ to extract the result of the transformation and insert to destination table _Salary_
 
 b. Python
