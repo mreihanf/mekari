@@ -13,7 +13,7 @@ class Engine:
 
     
     def __init__(self,config_path,db_type,sql_type):
-        
+        #Initialize config parameters for engine
         self.cfg = ConfigParser()
         self.cfg.read(config_path)
         self.sql_type = sql_type
@@ -24,6 +24,7 @@ class Engine:
         self.database = self.cfg.get(db_type,'database_name')
       
     def get_engine(self):
+        #Create database engine
         return db.create_engine(self.sql_type+"://{}:{}@{}:{}/{}".format(self.user, self.password, self.host, self.port, self.database))
     
     
